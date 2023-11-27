@@ -5,7 +5,7 @@ import SearchResult from "./components/SearchResults/SearchResult";
 export const BASE_URL = "http://localhost:9000";
 
 const App = () => {
-  const [data, setData] = useState(null);
+  
   const [filteredData, setFilteredData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
