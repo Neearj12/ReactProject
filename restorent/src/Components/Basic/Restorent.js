@@ -9,23 +9,22 @@ const uniquelist = [
     menu.map((currele) => {
       return currele.category;
     })
-  ),"All",
+  ),
+  "All",
 ];
 
 const Restorent = () => {
   const [menudata, setmenudata] = useState(menu);
   const [menulist, setmenulist] = useState(uniquelist);
   const FilterItem = (category) => {
-    if(category==='All'){
-        setmenudata(menu);
-        return;
+    if (category === "All") {
+      setmenudata(menu);
+      return;
     }
     const updatedlist = menu.filter((currele) => {
-
       return currele.category === category;
     });
     setmenudata(updatedlist);
-
   };
 
   return (

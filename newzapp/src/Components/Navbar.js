@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -23,11 +23,11 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" aria-current="page" href="/">
                   Home
-                </a>
+                </Link>
               </li>
-          
+
               <li className="nav-item">
                 <a className="nav-link" href="/business">
                   business
@@ -35,7 +35,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/entertainment">
-                entertainment
+                  entertainment
                 </a>
               </li>
               <li className="nav-item">
@@ -49,20 +49,16 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/science">
+                <a className="nav-link" to="/science">
                   Science
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/technology">
+                <a className="nav-link" to="/technology">
                   technology
                 </a>
               </li>
-              
             </ul>
-            
-            
-            
           </div>
         </div>
       </nav>
