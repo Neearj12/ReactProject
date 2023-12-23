@@ -31,7 +31,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// Get Single User
+// Get Single User  
 router.get('/:id', async (req, res) => {
     const { id } = req.params;
     try {
