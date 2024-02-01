@@ -20,7 +20,7 @@ const Restorent = () => {
     if (category === "All") {
       setmenudata(menu);
       return;
-    }
+    }  
     const updatedlist = menu.filter((currele) => {
       return currele.category === category;
     });

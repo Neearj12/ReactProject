@@ -1,5 +1,5 @@
 
-import Restorent from './Components/Basic/Restorent';
+import Restorent from "./Components/Basic/Restorent";
 
 function App() {
   return (
